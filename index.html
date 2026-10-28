@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Platform informasi organisasi kemahasiswaan Universitas Negeri Jakarta. Temukan Ormawa sesuai minatmu.">
+    <title>Ormawa UNJ - Temukan Organisasi Kemahasiswaan UNJ</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='sans-serif' font-weight='bold' fill='%231F4E9C'>U</text></svg>">
+    <!-- Pinned font weights: 400, 600, 700 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@4.5.10/400.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@4.5.10/600.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@4.5.10/700.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-wrap">
+            <a href="#/beranda" class="logo">
+                <div class="logo-badge">U</div>
+                <span class="logo-background">Ormawa<span class="logo-accent">UNJ</span></span>
+            </a>
+            <nav class="nav-menu" id="navMenu" aria-label="Navigasi utama">
+                <a href="#/beranda" class="nav-link" data-route="beranda">Beranda</a>
+                <a href="#/jelajah" class="nav-link" data-route="jelajah">Jelajah</a>
+                <a href="#/tentang" class="nav-link" data-route="tentang">Tentang</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="app" role="main"></main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-badge">U</div>
+                        <span class="logo-background">Ormawa<span class="logo-accent">UNJ</span></span>
+                    </div>
+                    <p>Proyek mahasiswa untuk mengumpulkan informasi organisasi kemahasiswaan Universitas Negeri Jakarta.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigasi</h4>
+                    <a href="#/beranda">Beranda</a>
+                    <a href="#/jelajah">Jelajah</a>
+                    <a href="#/tentang">Tentang</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Kategori</h4>
+                    <a href="#/jelajah?kategori=Seni dan Budaya">Seni dan Budaya</a>
+                    <a href="#/jelajah?kategori=Olahraga">Olahraga</a>
+                    <a href="#/jelajah?kategori=Keilmuan dan Teknologi">Keilmuan & Teknologi</a>
+                    <a href="#/jelajah?kategori=Sosial dan Kemanusiaan">Sosial & Kemanusiaan</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Informasi</h4>
+                    <a href="#/tentang">Tentang & Sumber Data</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Ormawa UNJ - Kelompok 5 PTIK Fakultas Teknik Universitas Negeri Jakarta
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js" defer></script>
+    <script src="js/storage.js" defer></script>
+    <script src="js/app.js" defer></script>
+</body>
+</html>
